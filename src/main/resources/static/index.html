@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blueprints</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Módulos propios -->
+    <script src="js/apimock.js"></script>
+    <script src="js/apiclient.js"></script>
+    <script src="js/app.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+        #drawingCanvas {
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Blueprints</h1>
+
+<!-- Input autor -->
+<div>
+    <label for="authorInput">Author: </label>
+    <input id="authorInput" type="text" placeholder="Enter author name">
+    <button id="getBlueprints">Get blueprints</button>
+</div>
+
+<hr>
+
+<!-- Nombre autor -->
+<div>
+    <h3>Author: <span id="authorName">-</span></h3>
+</div>
+
+<!-- Tabla de planos -->
+<table id="blueprintsTable">
+    <thead>
+    <tr>
+        <th>Blueprint name</th>
+        <th>Points</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Aquí se llenarán los planos con jQuery -->
+    </tbody>
+</table>
+
+<div>
+    <h4>Total user points: <span id="totalPoints">0</span></h4>
+</div>
+
+<canvas id="drawingCanvas" width="500" height="400"></canvas>
+
+<!-- Script para asociar botón -->
+<script>
+    $("#getBlueprints").click(function () {
+        let author = $("#authorInput").val();
+        if (author) {
+            app.changeAuthor(author);
+            $("#authorName").text(author);
+        }
+    });
+</script>
+
+</body>
+</html>
