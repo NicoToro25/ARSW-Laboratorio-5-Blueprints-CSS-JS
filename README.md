@@ -251,7 +251,7 @@ Se prueba en localhost:8080 y se verifica el correcto funcionamiento.
 Se cumple con la funcionalidad completa del ejercicio, permitiendo consultar planos de un autor y graficar el seleccionado.
 ![img](img/funCanvas.png)
 
-12. Una vez funcione la aplicación (sólo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST.
+12. Una vez funcione la aplicación (solo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST.
 
 Ya se verificó el correcto funcionamiento del front-end con el 'apimock', por lo que se modifica el api implementando 'apiclient.js' para se comunique directamente con el backend.
 
@@ -260,3 +260,8 @@ Ya se verificó el correcto funcionamiento del front-end con el 'apimock', por l
 ![img](img/funApiClient.png)
 
 14. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que tenga una mejor presentación.
+
+Se agregan los estilos al proyecto.
+
+![img](img/bootstrap.png)
+
