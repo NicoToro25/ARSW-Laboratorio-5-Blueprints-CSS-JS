@@ -12,53 +12,80 @@
 En este respositorio se muestra la solución al
 [Laboratorio 5](https://github.com/ARSW-ECI-archive/HTML5-JS_REST_CLIENT_Blueprints-1)
 
-ESCRIBIR SOLUCIÓN
+Se hizo comprendió las responsabilidades dentro de una arquitectura cliente-servidor, donde se distribuyen las responsabilidades
+permitiendo ver adecuadamente como funciona cada uno.
+Además, se comprendió el uso de bibliotecas y frameworks como lo son Bootstrap y JQuery.
+Se creó un cliente grueso y se adaptó el código para permitir la interacción entre el back y el front.
 
 ## Estructura del laboratorio
 
 ```bash
-├── .idea/                          # Configuración propia de IntelliJ IDEA
-├── .mvn/                           # Configuración del wrapper de Maven
-│   └── wrapper/                    # Scripts y configuraciones del Maven Wrapper
-├── img/                            # Carpeta de imágenes para la documentación
-│   └── media/                      # Recursos gráficos de apoyo
-├── src/                            # Código fuente del proyecto
-│   ├── main/                       # Código principal
-│   │   └── java/                   
-│   │       └── edu/eci/arsw/blueprints/
-│   │           ├── controllers/    # Controladores REST (exponen la API)
-│   │           ├── filter/         # Interfaces para aplicar filtros a planos
-│   │           │   └── impl/       # Implementaciones concretas de filtros
-│   │           ├── model/          # Clases del modelo (Blueprint, Point, etc.)
-│   │           ├── persistence/    # Interfaces de persistencia
-│   │           │   └── impl/       # Implementación en memoria de la persistencia
-│   │           └── services/       # Lógica de negocio (servicios)
-│   └── test/                       # Código de pruebas
-│       └── java/
-│           └── edu/eci/arsw/blueprints/test/
-│               └── persistence/
-│                   └── impl/       # Pruebas unitarias para la capa de persistencia
-└── target/                         # Archivos generados por Maven (build)
-    ├── classes/                    # Archivos compilados del main
-    │   └── edu/eci/arsw/blueprints/
-    │       ├── controllers/        
-    │       ├── filter/impl/
-    │       ├── model/
-    │       ├── persistence/impl/
-    │       └── services/
-    ├── generated-sources/          # Fuentes generadas automáticamente
-    │   └── annotations/
-    ├── generated-test-sources/     # Fuentes de pruebas generadas
-    │   └── test-annotations/
-    ├── maven-archiver/             # Metadatos del build Maven
-    ├── maven-status/               # Estado del compilador de Maven
-    │   └── maven-compiler-plugin/
-    │       ├── compile/default-compile/
-    │       └── testCompile/default-testCompile/
-    ├── surefire-reports/           # Reportes de ejecución de pruebas
-    └── test-classes/               # Archivos compilados de test
-        └── edu/eci/arsw/blueprints/test/
-            └── persistence/impl/
+├───.idea
+├───.mvn
+│   └───wrapper
+├───img
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───edu
+│   │   │       └───eci
+│   │   │           └───arsw
+│   │   │               └───blueprints
+│   │   │                   ├───controllers
+│   │   │                   ├───filter
+│   │   │                   │   └───impl
+│   │   │                   ├───model
+│   │   │                   ├───persistence
+│   │   │                   │   └───impl
+│   │   │                   └───services
+│   │   └───resources
+│   │       └───static
+│   │           └───js
+│   └───test
+│       └───java
+│           └───edu
+│               └───eci
+│                   └───arsw
+│                       └───blueprints
+│                           └───test
+│                               └───persistence
+│                                   └───impl
+└───target
+    ├───classes
+    │   ├───edu
+    │   │   └───eci
+    │   │       └───arsw
+    │   │           └───blueprints
+    │   │               ├───controllers
+    │   │               ├───filter
+    │   │               │   └───impl
+    │   │               ├───model
+    │   │               ├───persistence
+    │   │               │   └───impl
+    │   │               └───services
+    │   └───static
+    │       └───js
+    ├───generated-sources
+    │   └───annotations
+    ├───generated-test-sources
+    │   └───test-annotations
+    ├───maven-archiver
+    ├───maven-status
+    │   └───maven-compiler-plugin
+    │       ├───compile
+    │       │   └───default-compile
+    │       └───testCompile
+    │           └───default-testCompile
+    ├───surefire-reports
+    └───test-classes
+        └───edu
+            └───eci
+                └───arsw
+                    └───blueprints
+                        └───test
+                            └───persistence
+                                └───impl
+
 
 ```
 ---
